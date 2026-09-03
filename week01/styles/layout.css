@@ -1,6 +1,7 @@
 body {
     display: grid;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkgray;
     grid-template-columns: 2fr 1fr;
 }
 
@@ -13,25 +14,25 @@ header p {
     margin: 0;
     padding: 10px;
     min-height: 50px;
-    background-color: beige;
+    background-color: #1F3A5F;
 }
 
 main {
     min-height: 200px;
     grid-column: 1 / 2;
-    background-color: antiquewhite;
+    background-color: #F4F6F8;
 
 }
 
 aside {
     grid-column: 2 / 3;
-    background-color: cadetblue;
+    background-color: #DCEAF3;
 }
 
 footer {
     grid-column: 1 / 3;
     text-align: center;
-    background-color: darkgray;
+    background-color: #1F3A5F;
     min-height: 100px;
 }
 
@@ -39,7 +40,12 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: lightskyblue;
+    background-color: #4F81A8;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
 }
 
 header,
