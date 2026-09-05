@@ -83,7 +83,7 @@ h1 {
 h3 {
     border-bottom: 1px solid var(--secondary-color);
     width: 70%;
-    margin-top: 10px 180px 10px 180px;
+    margin: 10px;
     padding-bottom: 5px;
 }
 
