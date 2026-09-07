@@ -82,8 +82,8 @@ h1 {
 
 h3 {
     border-bottom: 1px solid var(--secondary-color);
+    margin-left: 50px;
     width: 70%;
-    margin: 10px;
     padding-bottom: 5px;
 }
 
@@ -95,6 +95,7 @@ h3 {
 
 p {
     margin: 10px;
+    line-height: 2;
 }
 
 .card {
@@ -131,6 +132,10 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+li {
+    margin-bottom: 10px;
 }
 
 footer {
