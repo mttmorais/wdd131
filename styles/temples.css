@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #1f3a5f;
+    --secondary-color: #47799f;
+
+    --text-color: #333333;
+    --white-color: #ffffff;
+    --border-color: #808080;
+    --heading-font: "Comfortaa", sans-serif;
+    --body-font: "Outfit", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 420px;
+    margin: 10px auto;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+#course-title {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: var(--heading-font);
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+nav {
+    margin: 0 1rem;
+}
+
+/* Small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--white-color);
+    position: fixed;
+    right: 1rem;
+    top: 5px;
+}
+
+#menu::before {
+    content: "☰";
+    padding: 9.5px;
+}
+
+#menu.open::before {
+    content: "↪";
+}
+
+#menu:hover:before {
+    background-color: var(--secondary-color);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    font-family: var(--heading-font);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+/* When the button is clicked, the open class is toggled */
+.open a {
+    display: block;
+}
+
+/* Add a new symbol before the name
+.active::before {
+    content: "+++";
+} */
+
+nav a:hover::before {
+    content: "✨ ";
+}
+
+nav a:hover::after {
+    content: " ✨";
+}
+
+p {
+    margin: 8px;
+}
+
+footer {
+    font-family: var(--heading-font);
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    margin-top: 1rem;
+}
+
+/* images styles*/
+
+.container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    place-items: center;
+}
+
+figure {
+    background-color: var(--white-color);
+}
+
+img {
+    width: 270px;
+    height: 175px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-family: var(--body-font);
+    font-size: smaller;
+    text-align: center;
+}
+
+/* hover effect */
+.hover:hover {
+    box-shadow: 0 0 50px var(--border-color);
+}
