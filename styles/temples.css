@@ -22,7 +22,8 @@ main {
     border-radius: 10px;
 }
 
-h1 {
+h1,
+h2 {
     padding: 10px;
     text-align: center;
     font-family: var(--heading-font);
