@@ -22,16 +22,6 @@ main {
     border-radius: 10px;
 }
 
-#course-title {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.3rem;
-    font-family: var(--heading-font);
-    color: var(--white-color);
-    background-color: var(--primary-color);
-}
-
 h1 {
     padding: 10px;
     text-align: center;
@@ -39,11 +29,11 @@ h1 {
     font-size: 1.5rem;
     background-color: var(--primary-color);
     color: var(--white-color);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 nav {
+    display: flex;
+    justify-content: space-around;
     margin: 0 1rem;
 }
 
