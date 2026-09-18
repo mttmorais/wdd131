@@ -1,0 +1,57 @@
+@media screen and (min-width: 1000px) {
+
+    /* set up to the large page */
+
+    main {
+        position: relative;
+    }
+
+    .hero img {
+        height: 627px;
+        object-fit: cover;
+        /* correcting the position of the img*/
+        object-position: center 20%;
+        padding-bottom: 0;
+    }
+
+    .data {
+        top: 100px;
+        left: 7%;
+        border-bottom: none;
+    }
+
+    .weather {
+        bottom: 80px;
+        right: 7%;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " 🌞";
+    }
+
+    .data,
+    .weather {
+        position: absolute;
+        background: color-mix(in srgb,
+                var(--white-color) 65%,
+                transparent);
+    }
+
+    h2 {
+        position: relative;
+        left: -30px;
+        font-size: 2.6rem;
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+        text-align: left;
+        padding: 10px;
+    }
+
+    footer {
+        margin: 0
+    }
+}

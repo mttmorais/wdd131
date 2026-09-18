@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #1f3a5f;
+    --secondary-color: #47799f;
+
+    --text-color: #333333;
+    --white-color: #ffffff;
+    --green-color: #1f6b4f;
+    --yellow-color: #dcb251;
+    --border-color: #808080;
+    --heading-font: "Comfortaa", sans-serif;
+    --body-font: "Outfit", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 1.3rem;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    text-align: center;
+    font-family: var(--heading-font);
+    padding: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    padding-top: 0.7rem;
+    /* set a gradient to the img looks like the flag of Brazil*/
+    background: linear-gradient(to bottom,
+            var(--yellow-color) 0 50%,
+            var(--primary-color) 50% 100%);
+    padding-bottom: 1.2rem;
+    display: block;
+}
+
+section {
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+    padding: 0.5rem;
+    margin: 0 0 1rem;
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+section p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    margin: 0.3rem 0;
+    font-family: var(--body-font);
+}
+
+/* mixing the var() with rgba to config a transparent aspect*/
+.data {
+    border-bottom: 1px solid color-mix(in srgb,
+            var(--primary-color) 20%,
+            transparent);
+}
+
+section strong {
+    text-align: right;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 90px;
+    display: block;
+    margin: 0 auto 1.2rem;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    margin-top: 10px;
+    font-family: var(--heading-font);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Matheus Morais</title>
+
+    <meta name="description" content="This page is an example of Responsive Images and Functions">
+    <meta name="author" content="Matheus Morais">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>BRAZIL</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/cristo-redentor-large.webp" media="(min-width: 1500px)">
+                <source srcset="images//cristo-redentor-medium.webp" media="(min-width: 1000px)">
+                <img src="images//cristo-redentor-small.webp" alt="Rio de Janeiro, Brazil" width="1500" height="750">
+            </picture>
+        </div>
+
+        <section class="data">
+            <h2><strong>Data</strong></h2>
+            <p><strong>Area: </strong>8,509,360.850 km²</p>
+            <p><strong>Population: </strong>214,211,951</p>
+            <p><strong>Capital: </strong>Basília</p>
+            <p><strong>Languages: </strong>Portuguese</p>
+            <p><strong>Currency: </strong>Brazillian Real (BRL)</p>
+            <p><strong>Time Zone: </strong>UTC-3 (Brasília Time)</p>
+            <p><strong>Calling Code: </strong>+55</p>
+            <p><strong>Internet TLD: </strong>.br</p>
+        </section>
+
+        <section class="weather">
+            <h2><strong>Weather</strong></h2>
+            <img class="weather-icon" src="images/sun.svg" alt="Sunny Weather">
+            <p><strong>Temperature: </strong><span id="temperature"></span></p>
+            <p><strong>Conditions: </strong>Sunny</p>
+            <p><strong>Wind: </strong><span id="windspeed"></span></p>
+            <p><strong>Wind Chill: </strong><span id="windchill"></span></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> | Matheus Morais | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
