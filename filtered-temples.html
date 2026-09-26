@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Temple Album | Matheus Morais</title>
+
+    <meta name="description"
+        content="This page shows a responsive album of LDS temples from around the world using JS and a responsive filter.">
+    <meta name="author" content="Matheus Morais">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Open Navigation Menu"></button>
+        <nav class="navigation">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="radius">Collection</h2>
+        <div class="res-grid">
+
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> | Matheus Morais | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
