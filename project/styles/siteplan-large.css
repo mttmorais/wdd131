@@ -1,0 +1,48 @@
+@media (min-width: 37.5em) {
+    body {
+        max-width: 970px;
+    }
+
+    h1,
+    h2,
+    h3,
+    footer {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    section p {
+        padding: 1rem;
+    }
+
+    p,
+    li {
+        font-size: large;
+    }
+
+    /* Images */
+    .mobile {
+        width: 40%;
+        height: auto;
+    }
+
+    .desktop {
+        width: 90%;
+        height: auto;
+    }
+
+    .color {
+        margin: 1rem 10rem 1rem;
+    }
+}
