@@ -16,6 +16,7 @@
 
 body {
     margin: 0 auto;
+    width: 90%;
     max-width: 490px;
 }
 
@@ -66,12 +67,14 @@ img {
 
 .mobile {
     margin: 0 auto 1rem;
-    width: 250px;
+    width: 45%;
+    height: auto;
 }
 
 .desktop {
     margin: 0 auto 1rem;
-    width: 450px;
+    width: 80%;
+    height: auto;
 }
 
 /* fonts */

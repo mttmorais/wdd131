@@ -33,13 +33,7 @@
 
     /* Images */
     .mobile {
-        width: 40%;
-        height: auto;
-    }
-
-    .desktop {
-        width: 90%;
-        height: auto;
+        width: 35%;
     }
 
     .color {
