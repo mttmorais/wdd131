@@ -128,7 +128,7 @@ button:hover {
 .optional {
 
     font-family: var(--heading-font);
-    color: #597ad3;
+    color: var(--border-color);
 }
 
 /* footer*/
