@@ -119,6 +119,10 @@ button:hover {
     background-color: var(--primary-color);
 }
 
+.font {
+    font-family: var(--body-font);
+}
+
 /* footer*/
 footer {
     font-family: var(--heading-font);
