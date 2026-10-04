@@ -27,6 +27,7 @@
 
     fieldset label {
         margin-right: 2.5rem;
+        font-size: 1.2rem;
     }
 
     fieldset:last-of-type {
