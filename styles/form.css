@@ -107,11 +107,13 @@ button {
     font-family: var(--heading-font);
     font-weight: 600;
     font-size: 1.2rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
     border: none;
     border-radius: 10px;
     background-color: var(--secondary-color);
     color: var(--white-color);
+    justify-self: center;
     cursor: pointer;
 }
 
