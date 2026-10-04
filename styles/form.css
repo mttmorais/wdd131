@@ -1,7 +1,7 @@
 :root {
     --primary-color: #1f3a5f;
     --secondary-color: #47799f;
-    --text-color: #333333;
+    --text-color: #4c4c4c;
     --white-color: #ffffff;
     --border-color: #597ad3;
     --background: #efeeee;
@@ -123,6 +123,12 @@ button:hover {
 
 .font {
     font-family: var(--body-font);
+}
+
+.optional {
+
+    font-family: var(--heading-font);
+    color: #597ad3;
 }
 
 /* footer*/
