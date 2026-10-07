@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Studio MT 3D | Matheus Morais</title>
+
+    <meta name="description" content="This is the contact us page from Studio MT 3D">
+    <meta name="author" content="Matheus Morais">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="index.html" title="Logo Home">
+                <img src="images/logo.png" alt="Studio MT 3D Logo" loading="lazy">
+            </a>
+            <h1>Studio MT 3D</h1>
+        </div>
+        <button id="menu" aria-label="Open Navigation Menu"></button>
+        <nav class="navigation">
+            <a href="index.html" title="Home">Home</a>
+            <a href="products.html" title="Gallery">Gallery</a>
+            <a href="contact.html" title="Contact Us">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="form-main">
+        <form method="get" action="review.html">
+            <label for="product">Product Name</label>
+
+            <select name="product" id="product" required>
+                <option value="" disabled selected>
+                    Select a Product...
+                </option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rafting</legend>
+
+                <label for="rating1">
+                    <input type="radio" name="rating" id="rating1" value="1" required>
+                    ☆</label>
+
+                <label for="rating2">
+                    <input type="radio" name="rating" id="rating2" value="2" required>
+                    ☆☆</label>
+
+                <label for="rating3">
+                    <input type="radio" name="rating" id="rating3" value="3" required>
+                    ☆✬★</label>
+
+                <label for="rating4">
+                    <input type="radio" name="rating" id="rating4" value="4" required>
+                    ☆✬★★</label>
+
+                <label for="rating5">
+                    <input type="radio" name="rating" id="rating5" value="5" required>
+                    ☆☆✬★★</label>
+            </fieldset>
+
+            <label for="installDate">Date of Installation</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <fieldset>
+                <legend>Useful Features</legend>
+
+                <p>Which features did you find useful in the product?</p>
+                <p>(Check all tha apply)</p>
+
+                <label for="durability">
+                    <input type="checkbox" id="durability" name="features" value="durability">
+                    Durability
+                </label>
+
+                <label for="easy">
+                    <input type="checkbox" id="easy" name="features" value="easy">
+                    Easy of use
+                </label>
+
+                <label for="performance">
+                    <input type="checkbox" id="performance" name="features" value="performance">
+                    Performance
+                </label>
+
+                <label for="design">
+                    <input type="checkbox" id="design" name="features" value="design">
+                    Design
+                </label>
+            </fieldset>
+
+            <label for="review">Written Review<span class="optional"> (Optional)</span></label>
+            <textarea name="review" id="review"></textarea>
+
+            <label for="userName">Your Name<span class="optional"> (Optional)</span></label>
+            <input type="text" id="userName" name="userName">
+
+            <button class="form-button" type="submit">Post Review</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> | Matheus Morais | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

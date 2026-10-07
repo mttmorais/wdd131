@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Studio MT 3D | Matheus Morais</title>
+
+    <meta name="description" content="This is the product gallery page from Studio MT 3D">
+    <meta name="author" content="Matheus Morais">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="index.html" title="Logo Home">
+                <img src="images/logo.png" alt="Studio MT 3D Logo" loading="lazy">
+            </a>
+            <h1>Studio MT 3D</h1>
+        </div>
+        <button id="menu" aria-label="Open Navigation Menu"></button>
+        <nav class="navigation">
+            <a class="filter" href="index.html" title="Home">Home</a>
+            <a class="filter" href="products.html" title="Gallery">Gallery</a>
+            <a class="filter" href="contact.html" title="Contact Us">Contact Us</a>
+            <a class="filter" href="#" id="all" title="All products">All</a>
+            <a class="filter" href="#" id="small" title="Small products">Small</a>
+            <a class="filter" href="#" id="medium" title="Medium products">Medium</a>
+            <a class="filter" href="#" id="large" title="Large products">Large</a>
+        </nav>
+    </header>
+
+    <main class="product-main">
+        <h2 class="radius">Album</h2>
+        <h4>Use the menu to filter products by size and view their prices.</h4>
+        <div class="res-grid">
+
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> | Matheus Morais | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

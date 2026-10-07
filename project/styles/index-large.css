@@ -1,0 +1,148 @@
+@media (min-width: 37.5em) {
+    header {
+        background: linear-gradient(to bottom,
+                var(--primary-color) 0%,
+                var(--primary-color) 45%,
+                var(--secondary-color) 100%);
+    }
+
+    .index-main {
+        grid-template-columns: 3fr 2fr;
+        max-width: 970px;
+        border: 1px solid var(--secondary-color);
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+
+    /* logo */
+    .header-logo img {
+        width: 120px;
+        left: 1rem;
+    }
+
+    /* Hide the hamburger button */
+    #menu {
+        display: none;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    .navigation {
+        flex-direction: row;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .navigation a {
+        display: block;
+        position: relative;
+        flex: 1 1 100%;
+        font-size: 1.2rem;
+    }
+
+    /* main style */
+    .left-content {
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: var(--white-color);
+    }
+
+    .slogan {
+        padding: 4rem 0 0.5rem 2rem;
+    }
+
+    .introduction {
+        padding: 0.5rem 1rem 0 3rem;
+    }
+
+    .explore-button {
+        font-size: 1.3rem;
+        align-self: flex-start;
+        margin: 1rem 0 0 6rem;
+    }
+
+    .slogan h3,
+    .introduction h3,
+    .introduction p {
+        color: var(--text-color);
+    }
+
+    /* hero image */
+    .hero-image {
+        position: relative;
+        inset: auto;
+        z-index: auto;
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .hero-image img {
+        border-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    /* product page */
+    .product-main {
+        max-width: 970px;
+        margin: 10px auto;
+    }
+
+    .product-main h4 {
+        font-size: 1.3rem;
+    }
+
+    .res-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .label {
+        font-size: 1rem;
+    }
+
+    nav a.filter:hover::before {
+        left: 7%;
+    }
+
+    nav a.filter:hover::after {
+        right: 7%;
+    }
+
+    /* form page style */
+    .form-main {
+        max-width: 700px;
+    }
+
+    form {
+        gap: 1rem;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 1rem;
+    }
+
+    textarea {
+        min-height: 160px;
+    }
+
+    fieldset label {
+        margin-right: 2.5rem;
+        font-size: 1.2rem;
+    }
+
+    fieldset:last-of-type {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
