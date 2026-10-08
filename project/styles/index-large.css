@@ -72,7 +72,7 @@
         margin: 1rem 0 2rem 6rem;
     }
 
-    .slogan h3,
+    .slogan h2,
     .introduction h3,
     .introduction p {
         color: var(--text-color);
@@ -138,7 +138,7 @@
         margin: 10px auto;
     }
 
-    .product-main h4 {
+    .product-main h3 {
         font-size: 1.3rem;
     }
 

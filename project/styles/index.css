@@ -174,7 +174,7 @@ nav a:hover::after {
     padding: 0.5rem 0.5rem 0.5rem 2rem;
 }
 
-.slogan h3,
+.slogan h2,
 .introduction h3,
 .introduction p {
     color: var(--white-color);
@@ -305,9 +305,10 @@ nav a:hover::after {
     border-radius: 10px;
 }
 
-.product-main h4 {
+.product-main h3 {
     font-family: var(--body-font);
     font-weight: normal;
+    font-size: 1rem;
     padding: 1rem 0.5rem 0;
     text-align: center;
 }
@@ -439,8 +440,8 @@ textarea {
 
 input[type="radio"],
 input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
 }
 
@@ -506,9 +507,8 @@ textarea {
 }
 
 .optional {
-
     font-family: var(--heading-font);
-    color: var(--border-color);
+    color: var(--text-color);
 }
 
 /* footer style*/
