@@ -231,8 +231,51 @@ const products = [
     }
 
 ];
+if (document.querySelector(".res-grid")) {
+    createProductCard(products);
+}
 
-createProductCard(products);
+const featuredProducts = [
+    products[6],
+    products[11],
+    products[13],
+    products[14]
+];
+
+// function to create cards with product image to home page
+function createFeaturedProducts(products) {
+    const featuredGrid = document.querySelector(".featured-grid");
+
+    if (!featuredGrid) return;
+
+    featuredGrid.innerHTML = "";
+
+    products.forEach(product => {
+        const card = document.createElement("article");
+        const imageContainer = document.createElement("div");
+        const img = document.createElement("img");
+        const name = document.createElement("h3");
+
+        card.classList.add("featured-card");
+        imageContainer.classList.add("featured-image-container");
+        img.classList.add("featured-image");
+
+        name.textContent = product.productName;
+
+        img.setAttribute("src", product.imageUrl);
+        img.setAttribute("alt", product.productName);
+        img.setAttribute("loading", "lazy");
+
+        imageContainer.appendChild(img);
+
+        card.appendChild(imageContainer);
+        card.appendChild(name);
+
+        featuredGrid.appendChild(card);
+    });
+}
+
+createFeaturedProducts(featuredProducts);
 
 // function to set attributes to HTML using JS
 function createProductCard(products, selectedSize = null) {
@@ -331,32 +374,34 @@ const smallLink = document.querySelector("#small");
 const mediumLink = document.querySelector("#medium");
 const largeLink = document.querySelector("#large");
 
-// HOME
-allLink.addEventListener("click", () => {
-    createProductCard(products);
-    closeMenu()
-});
+if (allLink && smallLink && mediumLink && largeLink) {
+    // HOME
+    allLink.addEventListener("click", () => {
+        createProductCard(products);
+        closeMenu()
+    });
 
-// SMALL
-smallLink.addEventListener("click", () => {
-    const filteredProducts = products.filter(product => product.sizes.small);
-    createProductCard(filteredProducts, "small")
-    closeMenu()
-});
+    // SMALL
+    smallLink.addEventListener("click", () => {
+        const filteredProducts = products.filter(product => product.sizes.small);
+        createProductCard(filteredProducts, "small")
+        closeMenu()
+    });
 
-// MEDIUM
-mediumLink.addEventListener("click", () => {
-    const filteredProducts = products.filter(product => product.sizes.medium);
-    createProductCard(filteredProducts, "medium")
-    closeMenu()
-});
+    // MEDIUM
+    mediumLink.addEventListener("click", () => {
+        const filteredProducts = products.filter(product => product.sizes.medium);
+        createProductCard(filteredProducts, "medium")
+        closeMenu()
+    });
 
-// LARGE
-largeLink.addEventListener("click", () => {
-    const filteredProducts = products.filter(product => product.sizes.large);
-    createProductCard(filteredProducts, "large")
-    closeMenu()
-});
+    // LARGE
+    largeLink.addEventListener("click", () => {
+        const filteredProducts = products.filter(product => product.sizes.large);
+        createProductCard(filteredProducts, "large")
+        closeMenu()
+    });
+}
 
 // function to close the menu when the filters are clicked
 function closeMenu() {
