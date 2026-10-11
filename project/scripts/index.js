@@ -30,7 +30,8 @@ const products = [
             }
         },
         imageUrl:
-            "images/resurrection.webp"
+            "images/resurrection.webp",
+        thumbnailUrl: "images/resurrection-small.webp"
     },
     {
         productName: "Foolishness vs. Prudence",
@@ -50,6 +51,8 @@ const products = [
         },
         imageUrl:
             "images/foolishness-vs-prudence.webp"
+        ,
+        thumbnailUrl: "images/foolishness-vs-prudence-small.webp"
     },
     {
         productName: "Knock, and It Shall Be Opened unto You",
@@ -61,7 +64,8 @@ const products = [
             }
         },
         imageUrl:
-            "images/knock-and-it-shall-be-opened-unto-you.webp"
+            "images/knock-and-it-shall-be-opened-unto-you.webp",
+        thumbnailUrl: "images/knock-and-it-shall-be-opened-unto-you-small.webp"
     },
     {
         productName: "Feed My Sheep",
@@ -83,7 +87,8 @@ const products = [
             }
         },
         imageUrl:
-            "images/feed-my-sheep.webp"
+            "images/feed-my-sheep.webp",
+        thumbnailUrl: "images/feed-my-sheep-small.webp"
     },
     {
         productName: "Restoration of the Melchizedek Priesthood",
@@ -95,7 +100,8 @@ const products = [
             }
         },
         imageUrl:
-            "images/restoration-of-the-melchizedek-priesthood.webp"
+            "images/restoration-of-the-melchizedek-priesthood.webp",
+        thumbnailUrl: "images/restoration-of-the-melchizedek-priesthood-small.webp"
     },
     {
         productName: "Gethsemane",
@@ -112,7 +118,8 @@ const products = [
             }
         },
         imageUrl:
-            "images/gethsemane.webp"
+            "images/gethsemane.webp",
+        thumbnailUrl: "images/gethsemane-small.webp"
     },
     {
         productName: "The First Vision",
@@ -129,7 +136,8 @@ const products = [
             }
         },
         imageUrl:
-            "images/the-first-vision.webp"
+            "images/the-first-vision.webp",
+        thumbnailUrl: "images/the-first-vision-small.webp"
     },
     {
         productName: "He Is Not Here, for He Is Risen!",
@@ -141,7 +149,8 @@ const products = [
             }
         },
         imageUrl:
-            "images/he-is-not-here-for-he-is-risen.webp"
+            "images/he-is-not-here-for-he-is-risen.webp",
+        thumbnailUrl: "images/he-is-not-here-for-he-is-risen-small.webp"
     },
     {
         productName: "Jacob's Well",
@@ -158,7 +167,8 @@ const products = [
             }
         },
         imageUrl:
-            "images/jacob-well.webp"
+            "images/jacob-well.webp",
+        thumbnailUrl: "images/jacob-well-small.webp"
     },
     {
         productName: "Feed My Sheep - Version 2",
@@ -170,7 +180,8 @@ const products = [
             }
         },
         imageUrl:
-            "images/feed-my-sheep-version-2.webp"
+            "images/feed-my-sheep-version-2.webp",
+        thumbnailUrl: "images/feed-my-sheep-version-2-small.webp"
     },
     {
         productName: "Can a Mother Forget Her Child?",
@@ -182,7 +193,8 @@ const products = [
             }
         },
         imageUrl:
-            "images/can-mother-forget-her-child.webp"
+            "images/can-mother-forget-her-child.webp",
+        thumbnailUrl: "images/can-mother-forget-her-child-small.webp"
     },
     {
         productName: "Missionary Badge Holder",
@@ -194,7 +206,8 @@ const products = [
             }
         },
         imageUrl:
-            "images/missionary-badge-holder.webp"
+            "images/missionary-badge-holder.webp",
+        thumbnailUrl: "images/missionary-badge-holder-small.webp"
     },
     {
         productName: "Missionary Couple Badge Holder",
@@ -206,7 +219,8 @@ const products = [
             }
         },
         imageUrl:
-            "images/missionary-couple-badge-holder.webp"
+            "images/missionary-couple-badge-holder.webp",
+        thumbnailUrl: "images/missionary-couple-badge-holder-small.webp"
     },
     {
         productName: "Restoration of the Aaronic Priesthood",
@@ -218,7 +232,8 @@ const products = [
             }
         },
         imageUrl:
-            "images/restoration-of-the-aaronic-priesthood.webp"
+            "images/restoration-of-the-aaronic-priesthood.webp",
+        thumbnailUrl: "images/restoration-of-the-aaronic-priesthood-small.webp"
     },
     {
         productName: "Customizable Statue",
@@ -227,7 +242,8 @@ const products = [
             price: "Contact Us for Pricing"
         },
         imageUrl:
-            "images/customizable-statue.webp"
+            "images/customizable-statue.webp",
+        thumbnailUrl: "images/customizable-statue-small.webp"
     }
 
 ];
@@ -262,7 +278,7 @@ function createFeaturedProducts(products) {
 
         name.textContent = product.productName;
 
-        img.setAttribute("src", product.imageUrl);
+        img.setAttribute("src", product.thumbnailUrl || product.imageUrl);
         img.setAttribute("alt", product.productName);
         img.setAttribute("loading", "lazy");
 
@@ -315,7 +331,7 @@ function createProductCard(products, selectedSize = null) {
             });
         }
 
-        img.setAttribute("src", product.imageUrl);
+        img.setAttribute("src", product.thumbnailUrl || product.imageUrl);
         img.setAttribute("alt", `${product.productName}`);
         img.setAttribute("loading", "lazy");
 
