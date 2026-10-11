@@ -242,7 +242,7 @@ const featuredProducts = [
     products[14]
 ];
 
-// function to create cards with product image to home page
+// function to create cards with products image to home page
 function createFeaturedProducts(products) {
     const featuredGrid = document.querySelector(".featured-grid");
 

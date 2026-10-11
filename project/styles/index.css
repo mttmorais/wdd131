@@ -5,7 +5,7 @@
     --card-color: #f2f2f2;
     --text-color: #333333;
     --white-color: #ffffff;
-    --border-color: #808080;
+    --border-color: #aaaaaa;
     --heading-font: "Comfortaa", sans-serif;
     --body-font: "Outfit", sans-serif;
 }
@@ -265,27 +265,7 @@ nav a:hover::after {
 .featured-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-}
-
-.featured-image-container {
-    width: 100%;
-    height: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.featured-image {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    display: block;
-    margin: auto;
-    border-radius: 10px
+    grid-gap: 0.5rem;
 }
 
 .featured-card {
@@ -308,7 +288,7 @@ nav a:hover::after {
     padding: 0.5rem 0 0.5rem 0;
 }
 
-/* product page */
+/* product page and some '.featured' config*/
 .product-main {
     max-width: 970px;
     margin: 1rem;
@@ -341,25 +321,42 @@ nav a:hover::after {
     place-items: center;
 }
 
+.featured-image {
+    margin: auto;
+}
+
 .res-grid img {
+    cursor: zoom-in;
+    border: 1px solid var(--border-color);
+}
+
+.res-grid img,
+.featured-image {
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
     display: block;
     border-radius: 10px;
-    cursor: zoom-in;
     transition: transform 0.2s ease;
 }
 
+.featured-image-container {
+    height: 160px;
+}
+
 .image-container {
-    width: 100%;
     height: 250px;
+}
+
+.image-container,
+.featured-image-container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
     overflow: visible;
+    border-radius: 10px;
 }
 
 .image-modal {
@@ -385,7 +382,8 @@ nav a:hover::after {
     border-radius: 10px;
 }
 
-.res-grid img:hover {
+.res-grid img:hover,
+.featured-image:hover {
     transform: scale(1.05);
 }
 

@@ -91,6 +91,10 @@
         gap: 1rem;
     }
 
+    .featured-image {
+        border: 1px solid var(--border-color);
+    }
+
     .featured-image-container {
         height: 200px;
     }
