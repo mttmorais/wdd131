@@ -258,6 +258,26 @@ const featuredProducts = [
     products[14]
 ];
 
+// function to populate the options of the products list
+function populateProductList() {
+    const productSelect = document.querySelector("#customProduct");
+
+    if (!productSelect) {
+        return;
+    }
+
+    products.forEach((product) => {
+        const option = document.createElement("option");
+
+        option.value = product.productName;
+        option.textContent = product.productName;
+
+        productSelect.appendChild(option);
+    });
+}
+
+populateProductList();
+
 // function to create cards with products image to home page
 function createFeaturedProducts(products) {
     const featuredGrid = document.querySelector(".featured-grid");
@@ -423,6 +443,19 @@ if (allLink && smallLink && mediumLink && largeLink) {
 function closeMenu() {
     navigation.classList.remove("open");
     hamButton.classList.remove("open");
+}
+
+// function to create cards with options inside the contact us page
+function showCustomForm() {
+    document.querySelector("#custom-form").classList.remove("hidden");
+    document.querySelector("#review-form").classList.add("hidden");
+    document.querySelector(".contact-divider").classList.remove("hidden");
+}
+
+function showReviewForm() {
+    document.querySelector("#review-form").classList.remove("hidden");
+    document.querySelector("#custom-form").classList.add("hidden");
+    document.querySelector(".contact-divider").classList.remove("hidden");
 }
 
 // footer time of last modification

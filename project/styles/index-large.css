@@ -191,6 +191,20 @@
         flex-wrap: wrap;
         gap: 1rem;
     }
+
+    .contact-options {
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .contact-options button {
+        min-height: 160px;
+        font-size: 1.7rem;
+    }
+
+    .contact-intro p {
+        font-size: large;
+    }
 }
 
 @media (min-width: 58em) {

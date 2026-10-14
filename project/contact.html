@@ -24,7 +24,7 @@
     <header>
         <div class="header-logo">
             <a href="index.html" title="Logo Home">
-                <img src="images/logo.png" alt="Studio MT 3D Logo" loading="lazy">
+                <img src="images/logo.webp" alt="Studio MT 3D Logo" loading="lazy">
             </a>
             <h1>Studio MT 3D</h1>
         </div>
@@ -37,87 +37,155 @@
     </header>
 
     <main class="form-main">
-        <form method="get" action="#"> <!-- I will implement the action -->
-            <label for="product">Product name</label>
 
-            <select name="product" id="product" required>
-                <option value="" disabled selected>
-                    Select a Product...
-                </option>
-            </select>
+        <div class="contact-intro">
+            <h2>Contact Us</h2>
+            <p>Have a custom idea or want to share your experience? Close an option bellow.</p>
+        </div>
 
-            <label for="purchaseDate">Purchase date</label>
-            <input type="date" id="purchaselDate" name="purchaseDate" required>
+        <div class="contact-options">
 
-            <fieldset>
-                <legend>Overall product rating</legend>
+            <button type="button" onclick="showCustomForm()">Custom Order</button>
+            <button type="button" onclick="showReviewForm()">Product Review</button>
 
-                <label for="rating1">
-                    <input type="radio" name="rating" id="rating1" value="1" required>
-                    ☆</label>
+        </div>
 
-                <label for="rating2">
-                    <input type="radio" name="rating" id="rating2" value="2" required>
-                    ☆☆</label>
+        <hr class="contact-divider hidden">
 
-                <label for="rating3">
-                    <input type="radio" name="rating" id="rating3" value="3" required>
-                    ☆☆☆</label>
+        <section id="custom-form" class="hidden">
+            <h3>Custom Order</h3>
+            <p>Tell us about the product you would like to customize.</p>
 
-                <label for="rating4">
-                    <input type="radio" name="rating" id="rating4" value="4" required>
-                    ☆☆☆☆</label>
+            <form method="get" action="#">
 
-                <label for="rating5">
-                    <input type="radio" name="rating" id="rating5" value="5" required>
-                    ☆☆☆☆☆</label>
-            </fieldset>
+                <label for="customName">Name</label>
+                <input type="text" id="customName" name="customName" autocomplete="name" placeholder="Matthew..."
+                    required>
 
-            <fieldset>
-                <legend>Positive or negative points</legend>
+                <label for="customEmail">Email address</label>
+                <input type="text" id="customEmail" name="customEmail" autocomplete="name"
+                    placeholder="your-email-here@example.com..." required>
 
-                <p>Which features did you find positive/negative in the product?</p>
-                <p>(Check all tha apply)</p>
+                <label for="customProduct">Product name</label>
+                <select id="customProduct" name="customProduct" required>
+                    <option value="" disabled selected>
+                        Select a Product...
+                    </option>
+                </select>
 
-                <label for="design">
-                    <input type="checkbox" id="design" name="features" value="design">
-                    Design
+                <label for="customSize">Preferred size</label>
+                <select id="customSize" name="customSize" required>
+                    <option value="" disabled selected>
+                        Select a Size...
+                    </option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="custom">Custom Size</option>
+                    <option value="unsure">Not sure yet</option>
+                </select>
+
+                <label for="customDetails">
+                    Describe your customization
                 </label>
+                <textarea id="customDetails" name="customDetails"
+                    placeholder="Tell us about the dimensions, colors, text or changes you would like..."
+                    required></textarea>
 
-                <label for="durability">
-                    <input type="checkbox" id="durability" name="features" value="durability">
-                    Durability
-                </label>
+                <button class="form-button" type="submit">
+                    Send Custom Request
+                </button>
 
-                <label for="size">
-                    <input type="checkbox" id="size" name="features" value="size">
-                    Size
-                </label>
+            </form>
 
-                <label for="colors">
-                    <input type="checkbox" id="colors" name="features" value="colors">
-                    Colors
-                </label>
+        </section>
 
-                <label for="material">
-                    <input type="checkbox" id="material" name="features" value="material">
-                    Material
-                </label>
-            </fieldset>
+        <section id="review-form" class="hidden">
+            <h3>Product Review</h3>
+            <p>Let us know what you think about your experience.</p>
 
-            <label for="feedback">Give us your feedback<span class="optional"> (Optional)</span></label>
-            <textarea name="feedback" id="feedback"></textarea>
+            <form method="get" action="#">
+                <label for="product">Product name</label>
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>
+                        Select a Product...
+                    </option>
+                </select>
 
-            <label for="userName">Your name<span class="optional"> (Optional)</span></label>
-            <input type="text" id="userName" name="userName">
+                <label for="purchaseDate">Purchase date</label>
+                <input type="date" id="purchaselDate" name="purchaseDate" required>
 
-            <label for="userPhone">Phone number to contact<span class="optional"> (Optional)</span></label>
-            <input type="text" id="userPhone" name="userPhone">
+                <fieldset>
+                    <legend>Overall product rating</legend>
 
-            <button class="form-button" type="submit">Post Feedback</button>
-        </form>
+                    <label for="rating1">
+                        <input type="radio" name="rating" id="rating1" value="1" required>
+                        ☆</label>
 
-        <!-- This page will be divided in two parts, first to contact to custom some products and the other part will be to the product review. -->
+                    <label for="rating2">
+                        <input type="radio" name="rating" id="rating2" value="2" required>
+                        ☆☆</label>
+
+                    <label for="rating3">
+                        <input type="radio" name="rating" id="rating3" value="3" required>
+                        ☆☆☆</label>
+
+                    <label for="rating4">
+                        <input type="radio" name="rating" id="rating4" value="4" required>
+                        ☆☆☆☆</label>
+
+                    <label for="rating5">
+                        <input type="radio" name="rating" id="rating5" value="5" required>
+                        ☆☆☆☆☆</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Positive or negative points</legend>
+
+                    <p>Which features did you find positive/negative in the product?</p>
+                    <p>(Check all tha apply)</p>
+
+                    <label for="design">
+                        <input type="checkbox" id="design" name="features" value="design">
+                        Design
+                    </label>
+
+                    <label for="durability">
+                        <input type="checkbox" id="durability" name="features" value="durability">
+                        Durability
+                    </label>
+
+                    <label for="size">
+                        <input type="checkbox" id="size" name="features" value="size">
+                        Size
+                    </label>
+
+                    <label for="colors">
+                        <input type="checkbox" id="colors" name="features" value="colors">
+                        Colors
+                    </label>
+
+                    <label for="material">
+                        <input type="checkbox" id="material" name="features" value="material">
+                        Material
+                    </label>
+                </fieldset>
+
+                <label for="feedback">Give us your feedback</label>
+                <textarea name="feedback" id="feedback"
+                    placeholder="Share your thoughts and help us improve our products..."></textarea>
+
+                <label for="userName">Your name</label>
+                <input type="text" id="userName" name="userName" placeholder="Matthew...(Optional)">
+
+                <label for="userEmail">Email address</label>
+                <input type="text" id="userEmail" name="userEmail" placeholder="your-email-here@example.com">
+
+                <button class="form-button" type="submit">Post Feedback</button>
+            </form>
+
+        </section>
+
     </main>
 
     <footer>
